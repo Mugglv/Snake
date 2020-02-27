@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>贪吃蛇</title>
+</head>
+<body>
+    <div id="toolbar">
+        <div id="toolbar-container">
+            <div id="level-container">
+                <span>level: </span>
+                <select id="level" onclick="selectSpeed()" onchange="this.blur()">
+                    <option value ="easy">easy</option>
+                    <option value ="normal" selected>normal</option>
+                    <option value="hard">hard</option>
+                </select>
+            </div>
+              
+            <div id="score-container">
+                <span>score: </span>
+                <span id="score">0</span>
+            </div>
+    
+            <div id="button-container">
+                <button onclick="javascript:location.reload();">Replay</button>
+                <!-- <button onclick="">Pause</button> -->
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="game-area" class="fg">
+            <!-- <canvas id="canvas" width="1000px" height="600px" style="background-color: aquamarine;"></canvas> -->
+            <!-- <div class="food"></div> -->
+        </div>
+    </div>
+    <div id="info">
+        <p>Please press any key to start the game</p>
+        <p>Press <code>space</code> to pause</p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
